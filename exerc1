@@ -1,1 +1,18 @@
+/!-- Descreva em no máximo 200 palavras o que é um automóvel e o que ele faz. Liste os substantivos e verbos separadamente. Cada substantivo corresponde a um objeto que precisará ser construído para implementar um sistema, nesse caso, um carro. Selecione 5 dos objetos que você listou e, para cada um, liste vários atributos e comportamentos. Descreva brevemente como esses objetos interagem entre si e com outros objetos na sua descrição. Estes passos que você seguiu são típicos do projeto orientado a objetos. --/
 
+Descrição:
+Um automóvel é um veículo motorizado com rodas, cuja função é transportar passageiros e/ou cargas. É movido com o auxílio de um motor e é pilotado por um motorista, este controla a maior parte das funções do automóvel, por meio da ignição, do volante, do freio e do acelarador.
+
+Listagem: 
+Substantivos - automóvel, veículo, roda, passageiros, cargas, motor, motorista, direção, freio, acelerador, ignição. 
+Verbos - é, trasportar, mover, pilotar, controlar.
+
+Objetos:
+Ignição - a ignição é constituída por diversos componentes eletrônicos, é responsável pela inicialização do motor presente no automóvel.
+Volante - o volante é a parte visível da direção, é resposável por transmitir os movimentos impostos pelo motorista para as rodas, é ele quem determina o rumo do deslocamento do automóvel.
+Motor - o motor é responsável por transformar as diferentes formas de combustíveis em energia mecânica, para que assim o automóvel consiga desempenhar suas funções.
+Freio - o freio é uma espécie de pedal, que ao ser pressionado pelo motorista, faz o automóvel diminuir sua velocidade ou encerrar por completo seu moviemnto, também é responsável por manter o carro parado quando estacionado.
+Acelerador - o acelerador é uma espécie de pedal, que ao ser pressionado pelo motorista, faz o automóvel inicar seu movimento ou aumentar sua velocidade. 
+
+Interação:
+O motorista aciona a ignição do automóvel e com isto o motor começa a desempenhar sua função, a partir deste momento o motorista utiliza o volante para definir o rumo em que deseja ir, em seguida pressiona o acelarador para iniciar seu movimento e utiliza do freio para manter uma velocidade constante ou cessar o movimento.
