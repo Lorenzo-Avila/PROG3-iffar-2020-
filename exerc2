@@ -1,1 +1,88 @@
+<!-- A fim de representar empregados em uma empresa, crie uma classe chamada Empregado que inclui as três informações a seguir como atributos: 
+- um primeiro nome, 
+- um sobrenome, e 
+- um salário mensal. 
+Sua classe deve ter um construtor (veja sobre este método especial na apostila pág. 6, e nos vídeos [1] e [2]) que inicializa os três atributos. Forneça um método set e get para cada atributo. Se o salário mensal não for positivo, configure-o como 0.0. Escreva um código de teste que demonstra as capacidades da classe. Crie duas instâncias da classe e exiba o salário anual de cada instância. Então dê a cada empregado um aumento de 10% e exiba novamente o salário anual de cada empregado. -->
 
+<?php
+  Class Employees{
+    public $name;
+    public $last_name;
+    public $salary_month;
+    public $salary_annual;
+  
+
+  public function_construct(){
+    $this-> name = "Carls";
+    $this-> last_name = "Carpes";
+    $this-> salary_month = 4700.00;
+  }
+  
+  public function setName($recieve){
+    return $this-> name= $recieve;
+  }
+  
+  public function getName(){
+    return $this-> name;
+  }
+  
+   public function setLast_name($recieve02){
+    return $this-> last_name= $recieve02;
+  }
+  
+  public function getLast_name(){
+    return $this-> last_name;
+  }
+  
+   public function setSalary_month=($recieve03){
+    return $this-> salary_month= $recieve03;
+  }
+  
+  public function getSalary_month(){
+    return $this-> salary_month;
+  }
+  
+   public function setSalary_annual=($recieve04){
+    return $this-> salary_annual= $recieve04;
+  }
+  
+  public function getSalary_annual(){
+    return $this-> salary_annual;
+  }
+  
+  public function valid_salary_month(){
+    if($this-> salary_month <= 0){
+    $this-> salary_month = 0.0;
+    }
+  }
+  
+  public function raise_salary_month(){
+    $extra = ($this-> salary_month*10)/100;
+    $this-> salary_month = $this-> salary_month + $extra;
+  }
+ }
+ 
+ //Employee01
+ $employee1 = new Employees ();
+ $employee1-> valid_salary_month();
+ $employee1-> setSalary_annual();
+ echo "O salario anual de {$employee1-> getName()} {$employee1 getLast_name()} é de R$ {$employee1-> getSalary_annual()}\n";
+ 
+ $employee1-> raise_salary_month();
+ $employee1-> setSalary_annual();
+ echo "O salario anual de {$employee1-> getName()} recebeu um acréssimo no valor de 10% sendo assim o salário passa a ser de R$ {$employee1-> getSalary_annual()}\n";
+ 
+ //Employee02
+ $employee2 = new Employees ();
+ $employee2-> setName("Tiago");
+ $employee2-> setLast_name("Ferreira");
+ $employee2-> setSalary_month(2300);
+ $employee2-> valid_salary_month();
+ $employee2-> setSalary_annual();
+ echo "O salario anual de {$employee2-> getName()} {$employee2 getLast_name()} é de R$ {$employee2-> getSalary_annual()}\n";
+ 
+ $employee2-> raise_salary_month();
+ $employee2-> setSalary_annual();
+ echo "O salario anual de {$employee2-> getName()} recebeu um acréssimo no valor de 10% sendo assim o salário passa a ser de R$ {$employee2-> getSalary_annual()}\n";
+ 
+?>
